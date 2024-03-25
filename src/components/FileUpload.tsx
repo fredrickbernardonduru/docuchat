@@ -9,6 +9,10 @@ const FileUpload = () => {
   // Destructuring getRootProps and getInputProps from the useDropzone hook
   const { getRootProps, getInputProps } = useDropzone({
     accept: { "application/pdf": [".pdf"] }, // Specify that only PDF files are accepted
+    maxFiles: 1,
+    onDrop: (acceptedFiles) => {
+      console.log(acceptedFiles);
+    },
   });
 
   return (
