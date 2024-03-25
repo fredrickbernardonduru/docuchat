@@ -1,10 +1,16 @@
+'use client'
 import React from 'react'
+import { useDropzone } from 'react-dropzone'
 
-type Props = {}
 
-const FileUpload = (props: Props) => {
+const FileUpload = () => {
+    const {getRootProps, getInputProps} = useDropzone()
   return (
-    <div>FileUpload</div>
+    <div className='p-2 bg-white rounded-xl'>
+        <div {...getRootProps()}>
+            <input {...getInputProps()} />
+        </div>
+    </div>
   )
 }
 
