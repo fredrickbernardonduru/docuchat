@@ -26,7 +26,7 @@ const FileUpload = () => {
             "border-dashed border-2 rounded-xl cursor-pointer bg-gray-50 py-8 flex justify-center items-center flex-col",
         })}
       >
-        <input {...getInputProps()} /> {/*  */}
+        <input {...getInputProps()} /> {/* Input element for file selection */}
         <>
           {/* Display Inbox icon from lucide-react library */}
           <Inbox className="w-10 h-10 text-blue-500" />
