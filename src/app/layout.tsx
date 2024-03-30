@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "DocuChat",
-  description: "",
+  description: "An auto reading system that helps you chat with your pdf document",
 };
 
 export default function RootLayout({
